@@ -1,0 +1,532 @@
+/* --------- Reset css --------- */
+* {
+  margin : 0;
+  padding : 0;
+}
+
+/* --------- Layout --------- */
+html, body {	
+  margin : 0;
+	background-color : #fff;
+	padding : 0;
+	color : #000;	
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	font-size : .9em;
+}
+#xo-canvas {
+  width : 980px;
+  margin : 10px auto;
+  padding : 2px;
+  border : 1px solid #ddd;
+}
+#xo-canvas-content {}
+#xo-page {padding-top : 5px;}
+
+/* --------- Hypertext links --------- */
+a {  
+  background-color : transparent;
+  color : #666;
+  text-decoration : none;
+  font-weight : bold;  
+}
+a:hover {color : #ff6600;}
+
+/* --------- Titles --------- */
+h1 {
+  font-size : 1.4em;
+  font-weight : bold;
+}
+h2 {font-size : 1.2em;}
+h3 {
+  padding-bottom : 3px;
+  font-size : 1em;  
+}
+h4 {font-size : 1em;}
+h5 {font-size : .9em;}
+h6 {font-size : .8em;}
+
+/* --------- Images --------- */
+img {
+  position : relative;
+  border : 0;  
+}
+
+/* --------- Lists --------- */
+#xo-canvas-content ul {
+  margin : 2px;
+  padding : 2px;
+  list-style : decimal inside;
+  text-align : left;
+}
+#xo-canvas-content li {
+  margin-left : 2px;
+  background-color : inherit;
+  color : #639ACE;
+  line-height : 1.4em;
+  list-style :	square inside;
+}
+
+/* --------- Forms --------- */
+fieldset {
+	margin : 0 0 1em 0;
+	padding : 1em;
+	border : 1px solid #ddd;
+}
+legend {
+  padding : 0 3px 0 3px;
+  color : #444;
+	font-size : .9em;
+	font-weight : bold;
+}
+label {
+	display : block;
+	float : left;
+	font-weight : bold;
+}
+input {
+	font-size : 1em;
+	border : 1px solid #ccc;
+}
+select {
+  background-color :	#f6f6f6;
+	color : #000;
+	border : 1px solid #ccc;
+	font-size : .9em;
+}
+textarea {
+	width :  85%;
+	height : 110px;
+	margin : 0.5em 0.5em 0.5em 0;
+	background-color : #eee;
+	padding : 5px;
+	color : #000;
+	border : 1px solid #bbb;
+	overflow : auto;
+}
+
+/* --------- Others --------- */
+acronym, abbr, dfn {cursor : help;}
+q, em, dfn, strong {font-style : italic;}
+strong, dfn {font-weight : bold;}
+del {text-decoration : line-through;}
+address {
+  font-style : normal;
+  letter-spacing : .1em;
+}
+
+/* ---------  Show class --------- */
+.clear {
+  clear:both;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearleft{
+  clear : left;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearright{
+  clear:  right;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.block {display : block;}
+.hide {display : none;}
+.spacer {padding : 0 0 3px 0;}
+.floatleft {
+	float : left;
+	margin-top : 1em;
+	margin-right : 1em;
+	padding-left : 4px;
+	border : 0;
+}
+.floatright {
+	float : right;
+	margin-bottom : 1em;
+	margin-left : 1em;
+	padding : 2px;
+	border : 0;
+}
+
+/* --------- Font class --------- */
+.extrasmall {font-size : .7em;}
+.small {font-size : .9em;}
+.normal {font-size : 1em;}
+.big {font-size : 1.2em;}
+.maxi {font-size :	1.5em;}
+
+.bold {font-weight : bold;}
+.italic {font-style : italic;}
+.underline {text-decoration : underline;}
+
+/* --------- Header --------- */
+#xo-header {
+  height : 80px;
+  background : url("../img/bghead.png") repeat;  
+}
+/* Logo */
+#xo-header img.logo {
+  width : 245px;
+  height : 80px;
+  margin-left : 5px;
+}   
+/* Banner */
+#xo-header .banner {
+  position : relative;
+  float : right;
+  top : 10px;
+  right : 70px;  
+}
+/* Navigation menu */
+ul#xo-globalnav {   
+  height : 20px; 
+  background : url("../img/hbar.gif") repeat-x;
+  padding-top : 3px;  
+  text-align : center;
+}
+ul#xo-globalnav li {
+  display : inline;
+  list-style : none;  
+}
+ul#xo-globalnav a {
+  padding : 2px 8px 2px 3px;
+  color : #333;
+  font-weight : normal;
+}
+ul#xo-globalnav a:hover {color : #ff6600;}
+ul#xo-globalnav a:active, ul#xo-globalnav a:focus {color : #639ACC;}
+
+/* --------- Breadcrumbs --------- */
+#xo-breadcrumbs {
+  margin : 0 5px 0 5px;
+  padding : 3px 3px 3px 5px;
+  font-size : .85em;
+}
+#xo-breadcrumbs a {color : #ff6600;}
+#xo-breadcrumbs a:hover {color : #666;}
+
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn {
+  width : 170px;
+  border-right : 1px solid #ddd;
+}
+#xo-canvas-leftcolumn h3.xo-blocktitle {
+  margin : 0 0 5px 0;  
+  padding : 3px;  
+  color : #666;
+  font-weight : bold;
+  text-align : center;
+}
+#xo-canvas-leftcolumn .xo-blockcontent {  
+  padding : 5px;
+  line-height : 1.2em;
+}
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn {
+  width : 170px;
+  border-right : 1px solid #ddd;
+}
+#xo-canvas-rightcolumn h3.xo-blocktitle {
+  margin : 0 0 5px 0;
+  background-color : #e6e6e6;
+  padding : 3px;
+  color : #639ACE;
+  font-weight : bold;
+  text-align : center;
+}
+#xo-canvas-rightcolumn .xo-blockcontent {
+  padding : 5px;
+  line-height : 1.2em;
+}
+
+/* --------- Center blocks --------- */
+#xo-page .xo-block {
+  margin : 5px;
+  border : 1px solid #ddd;
+}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks h3.xo-blocktitle, #xo-bottomcenterblocks h3.xo-blocktitle {
+  margin : 5px;
+  padding-left : 10px;
+  color : #639ACC;
+  font-weight : bold;
+  border-bottom : 1px solid #ddd;
+}
+#xo-topcenterblocks .xo-blockcontent, #xo-bottomcenterblocks .xo-blockcontent {
+  padding : 5px 8px 8px 8px;
+  margin-bottom : 2px;
+  line-height : 1.3em;
+  text-align :justify;
+}
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks {width : 49.5%;}
+#xo-topleftblocks h3.xo-blocktitle, #xo-bottomleftblocks h3.xo-blocktitle,
+#xo-toprightblocks h3.xo-blocktitle, #xo-bottomrightblocks h3.xo-blocktitle{
+  margin : 5px;
+  padding-left : 10px;
+  color : #639ACC;
+  font-weight : bold;
+  border-bottom : 1px solid #ddd;
+}
+#xo-topleftblocks .xo-blockcontent, #xo-toprightblocks .xo-blockcontent,
+#xo-bottomleftblocks .xo-blockcontent, #xo-bottomrightblocks .xo-blockcontent {
+  margin-bottom : 2px;
+  padding : 5px 8px 8px 8px;
+  line-height : 1.3em;
+  text-align : justify;  
+}
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;  
+}
+
+/* --------- Footer --------- */
+#xo-footer {  
+  background : url("../img/hbar.gif") repeat;
+  padding : 4px 0 4px 0;
+  text-align : center;
+  font-size : .85em;
+}
+#xo-footer cite {font-style : normal;}
+#xo-footer acronym {
+  color : #666;
+  font-weight : bold;
+}
+#xo-logger-output{font-size : .9em;}
+
+/* --------- Block main menu --------- */
+#mainmenu {font-size : .9em;}
+#mainmenu a {
+  display : block;
+  margin : 0;
+  background-color : #e6e6e6;    
+  padding : 4px;
+}
+#mainmenu a:hover {background-color : #fff;}
+#mainmenu a.menuTop {
+  padding-left : 3px;
+  border-top : 1px solid #ccc;
+  border-right : 1px solid #666;
+  border-bottom : 1px solid #666;
+  border-left : 1px solid #ccc;
+}
+#mainmenu a.menuMain {
+  padding-left : 3px;
+  border-right : 1px solid #666;
+  border-bottom : 1px solid #666;
+  border-left : 1px solid #ccc;
+}
+#mainmenu a.menuSub {  
+  background-color : #fff;
+  padding-left : 12px;
+  font-size : .9em;
+  font-style : italic;
+  border-right : 1px solid #666;
+  border-bottom : 1px solid #666;
+  border-left : 1px solid #ccc;
+}
+#mainmenu a.menuSub:hover {background-color : #e6e6e6;}
+
+/* --------- Block user menu --------- */
+#usermenu {font-size : .9em;}
+#usermenu a {
+  display : block;
+  margin : 0;
+  background-color : #e6e6e6;    
+  padding : 4px;
+  border-right : 1px solid #666;
+  border-bottom : 1px solid #666;
+  border-left : 1px solid #ccc;
+}
+#usermenu a:hover {background-color : #fff;}
+#usermenu a.menuTop {border-top : 1px solid #ccc;}
+#usermenu a.highlight {background-color : #fcc;}
+
+/* --------- Tables and cells --------- */
+table {width : 100%;}
+table td {
+  padding : 0;
+  vertical-align : top;
+  border-width : 0;  
+}
+th {
+  background-color : #639ACE;
+  padding : 2px;
+  color : #fff;  
+  vertical-align : middle;
+}
+.outer {border : 1px solid #ccc;}
+.head {
+  background-color : #c2cdd6;
+  padding : 5px;
+  font-weight : bold;
+}
+.even {
+  background-color : #dee3e7;
+  padding : 5px;
+}
+.odd {
+  background-color : #E9E9E9;
+  padding : 5px;
+}
+.foot {
+  background-color : #c2cdd6;
+  padding : 5px;
+  font-weight : bold;
+}
+tr.even td {
+  background-color : #dee3e7;
+  padding : 5px;
+}
+tr.odd td {
+  background-color : #E9E9E9;
+  padding : 5px;
+}
+
+/* --------- Core messages --------- */
+.errorMsg {
+  background-color : #FFCCCC;
+  padding : 10px;
+  text-align : center;
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;
+  font-weight : bold;  
+}
+.confirmMsg {
+  background-color : #DDFFDF;
+  padding : 10px;
+  color : #136C99;
+  text-align : center;
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;
+  font-weight : bold;  
+}
+.resultMsg {
+  background-color : #c1c1c1;
+  padding : 10px;
+  color : #333;
+  text-align : center;
+  border-top : 1px solid #ccc;
+  border-left : 1px solid #ccc;
+  font-weight : bold;
+  border-right : 1px solid #666;
+  border-bottom : 1px solid #666;  
+}
+
+/* --------- Codes and Quotes --------- */
+.xoopsCode {
+  max-height : 200px;
+  background-color : #fff;
+  padding : 0 6px 6px 6px; 
+  overflow : auto;
+  border : 1px inset #000080;
+  font-family : "Courier New",Courier,monospace;     
+}
+.xoopsQuote {
+  background-color : #fff;
+  padding : 0 6px 6px 6px;
+  font-family : "Courier New",Courier,monospace;
+  font-style :italic;
+  border : 1px inset #000080;  
+}  
+
+/* --------- Articles --------- */
+.item {border : 1px solid #ccc;}
+.itemHead {
+  background-color : #639ACE;
+  padding : 3px;  
+  color : #fff;
+  font-size : 1.1em;
+}
+.itemInfo {   
+  background-color : #efefef;
+  padding : 3px;
+  text-align : right; 
+}
+.itemTitle a {  
+  background-color : transparent;
+  color : #fff;
+  font-size : 1.1em;
+  font-weight : bold;
+  font-variant : small-caps;
+}
+.itemPoster {
+  font-size : .9em;
+  font-style :italic;
+}
+.itemPostDate {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemStats {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemBody {padding-left : 5px;}
+.itemText {
+  margin-top : 5px;
+  margin-bottom : 5px;
+  line-height : 1.5em;
+}
+.itemFoot {  
+  background-color : #efefef;
+  padding : 3px;
+  text-align : right; 
+}
+.itemAdminLink {font-size : .9em;}
+.itemPermaLink {font-size : .9em;}
+
+/* --------- Forums and Comments --------- */
+.comTitle {
+  margin-bottom : 2px;
+  font-weight : bold;  
+}
+.comText {padding : 2px;}
+.comUserStat {
+  margin : 2px; 
+  background-color : #fff;
+  padding : 2px;  
+  color : #639ACE;
+  font-size : .7em;
+  font-weight : bold;
+  border : 1px solid #ccc;   
+}
+.comUserStatCaption {font-weight : normal;}
+.comUserStatus {
+  margin-left : 2px;
+  margin-top : 10px;
+  color : #639ACC;
+  font-weight : bold;
+  font-size : .8em;
+}
+.comUserRank {margin : 2px;}
+.comUserRankText {
+  font-size : .8em;
+  font-weight : bold;
+}
+.comUserRankImg {border : 0;}
+.comUserName {}
+.comUserImg {margin : 2px;}
+.comDate {
+  font-weight : normal;
+  font-style : italic;
+  font-size : .8em;
+}  
+.comDateCaption {
+  font-weight : bold;
+  font-style : normal;
+  font-size : .8em;
+}
+.signature {
+  font-size : .8em;
+  font-style : italic;
+}
